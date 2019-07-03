@@ -46,7 +46,7 @@ def remove_from_nif(filename):
   os.remove(filename)
   print("Delete the old file")
   newstream = open(filename, 'wb')
-  newdata = NifFormat.Data(version=0x04000002, user_version=10)
+  newdata = NifFormat.Data(version=0x04000002, user_version=10) #Morrowind version number
   newdata.roots = [root_node]
   newdata.write(newstream)
   print("Create a new file")
