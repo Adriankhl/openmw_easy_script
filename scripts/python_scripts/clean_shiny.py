@@ -35,7 +35,6 @@ def remove_shiny_node(parent):
 
 def remove_from_nif(filename):
   """Modify the file, remove blocks causing shiny texture from the nif file""" 
-  #try:
   print("Operating on this file: " + filename)
   stream = open(filename, 'r+b')
   data = NifFormat.Data()
