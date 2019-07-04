@@ -78,19 +78,19 @@ fi
 if [ $RENAME_NM ]
 then 
   DIR="$( cd -P "$( dirname "$SOURCE" )" >/dev/null 2>&1 && pwd )"
-  FILELIST=$(source $DIR/scripts/bash_scripts/find_normal_map.sh $DIR_PATH)
-  for file in $FILELIST
+  mapfile -t FILELIST < <(source $DIR/scripts/bash_scripts/find_normal_map.sh $DIR_PATH)
+  for file in "${FILELIST[@]}"
   do
-    $PYTHON_NAME $DIR/scripts/python_scripts/rename_normal_map.py $file
+    $PYTHON_NAME $DIR/scripts/python_scripts/rename_normal_map.py "$file"
   done
 fi
 
 if [ $CLEAN_NIF ]
 then
   DIR="$( cd -P "$( dirname "$SOURCE" )" >/dev/null 2>&1 && pwd )"
-  FILELIST=$(source $DIR/scripts/bash_scripts/grep_nif.sh $DIR_PATH)
-  for file in $FILELIST
+  mapfile -t FILELIST < <(source $DIR/scripts/bash_scripts/grep_nif.sh $DIR_PATH)
+  for file in "${FILELIST[@]}"
   do
-    $PYTHON_NAME $DIR/scripts/python_scripts/clean_shiny.py $file
+    $PYTHON_NAME $DIR/scripts/python_scripts/clean_shiny.py "$file"
   done
 fi
