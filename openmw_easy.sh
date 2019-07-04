@@ -66,7 +66,7 @@ then
 fi
 
 # Determine the python name, python or python3
-PYTHON_VERSION=$(python -c 'import sys; print(sys.version_info[1])')
+PYTHON_VERSION=$(python -c 'import sys; print(sys.version_info[0])')
 if [ $PYTHON_VERSION == 3 ]
 then
   PYTHON_NAME="python"
