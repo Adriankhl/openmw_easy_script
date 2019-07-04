@@ -13,4 +13,4 @@ Cautious: please backup your mod files before running this script. It won't crea
 
 * Run `./openmw_easy.sh -r -f your/mods/directory` to rename the normal maps under all the subdirectory of `your/mods/directory` to `_n.dds`. 
 
-* Run `./openmw_easy.sh -c -f your/mods/directory` to clean the shiny `nif` under all the subdirectory of `your/mods/directory`, it is an automated process of [this document](https://openmw.readthedocs.io/en/openmw-0.41.0/openmw-mods/convert_bump_mapped_mods.html).
+* Run `./openmw_easy.sh -c -f your/mods/directory` to clean the shiny `nif` under all the subdirectory of `your/mods/directory`, it is an automated process mentioned in [this document](https://openmw.readthedocs.io/en/openmw-0.41.0/openmw-mods/convert_bump_mapped_mods.html).
