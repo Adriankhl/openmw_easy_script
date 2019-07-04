@@ -4,6 +4,7 @@ RENAME_NM=""
 CLEAN_NIF=""
 DIR_PATH=""
 PYTHON_NAME=""
+HELP_MOD=""
 
 
 # Help function
@@ -27,6 +28,7 @@ while getopts ":hcrf:" opt; do
   case $opt in
     h)
       script_usage 
+      HELP_MOD=true
       ;;
     r)
       RENAME_NM=true
@@ -57,9 +59,9 @@ then
 fi
 
 # Exit if there is no folder path in the input
-if [ -z $DIR_PATH ] 
+if [ -z $DIR_PATH ] && [ ! $HELP_MOD ] 
 then
-  echo "Error: No folder path, pleas use the -f option" >&2
+  echo "Error: No folder path, please use the -f option" >&2
   exit 1
 fi
 
