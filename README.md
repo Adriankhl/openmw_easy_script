@@ -1,5 +1,5 @@
 # openmw-easy-script
-Scripts to ease the preparation to play openmw.
+Scripts to ease the preparation to play [OpenMW](https://openmw.org/en/).
 
 # Requirements:
 
