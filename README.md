@@ -9,8 +9,8 @@ Scripts to ease the preparation to play [OpenMW](https://openmw.org/en/).
 
 # Usage
 
-Cautious: please backup your mod files before running this script. It won't create backup file automatically at the moment.
+Warning: please backup your mod files before running this script. It won't create backup file automatically at the moment.
 
 * Run `./openmw_easy.sh -r -f your/mods/directory` to rename the normal maps under all the subdirectory of `your/mods/directory` to `_n.dds`. 
 
-* Run `./openmw_easy.sh -c -f your/mods/directory` to clean the shiny `nif` under all the subdirectory of `your/mods/directory`, it is an automated process mentioned in [this document](https://openmw.readthedocs.io/en/openmw-0.41.0/openmw-mods/convert_bump_mapped_mods.html).
+* Run `./openmw_easy.sh -c -f your/mods/directory` to clean the shiny `nif` under all the subdirectory of `your/mods/directory`, it is an automated process mentioned in [this document](https://openmw.readthedocs.io/en/openmw-0.41.0/openmw-mods/convert_bump_mapped_mods.html). Warning: please only run this on the mods you think it has shiny meshes, not all the mods with texture effect cause the shiny problem.
