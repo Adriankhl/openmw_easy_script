@@ -5,11 +5,13 @@ Scripts to ease the preparation to play [OpenMW](https://openmw.org/en/).
 
 * Python 3
 * Bash shell: can be [Git Bash](https://gitforwindows.org/) or [MSYS2](https://www.msys2.org/) on Windows, and the shell on Linux.
-* [pyffi](https://github.com/niftools/pyffi) v2.2.2, can be installed by `pip3 install pyffi==2.2.2`.
+* [pyffi](https://github.com/niftools/pyffi) v2.2.2, can be installed by `pip3 install pyffi==2.2.2`. The latest version (2.2.3) is not functioning properly.
 
 # Usage
 
-First, make sure that you do not have `'` in the folder path of all of your mods. Please backup your mod files before running this script.
+First, make sure that you do not have `'` in the folder path of all of your mods. The python script here cannot handle those path name.
+
+Please backup your mod files before running this script.
 
 * Run `./openmw_easy.sh -r -f your/mods/directory` to rename and copy the normal maps under all the subdirectory of `your/mods/directory` to `_n.dds`. 
 
